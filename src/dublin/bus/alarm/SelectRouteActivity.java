@@ -1,3 +1,8 @@
+/*
+ * Select a  bus route from a list of routes
+ * Currently only Dublin bus route 66 working
+ */
+
 package dublin.bus.alarm;
 
 import android.app.ListActivity;
@@ -23,7 +28,6 @@ public class SelectRouteActivity extends ListActivity {
 		  lv.setOnItemClickListener(new OnItemClickListener() {
 		    public void onItemClick(AdapterView<?> parent, View view,
 		        int position, long id) {
-		      // When clicked, show a toast with the TextView text
 		    	Intent intent = new Intent(SelectRouteActivity.this, SelectDirectionActivity.class);
 		    	intent.putExtra("selectedRoute", view.toString());
 				SelectRouteActivity.this.startActivity(intent);

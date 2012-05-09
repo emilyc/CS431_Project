@@ -1,3 +1,8 @@
+/*
+ * Selected direction (inbound or outbound) of the selected route 
+ * and call selectStopActivity to populate the math with the correct stops
+ */
+
 package dublin.bus.alarm;
 
 import android.app.ListActivity;
@@ -23,7 +28,6 @@ public class SelectDirectionActivity extends ListActivity {
 		  lv.setOnItemClickListener(new OnItemClickListener() {
 		    public void onItemClick(AdapterView<?> parent, View view,
 		        int position, long id) {
-		      // When clicked, show a toast with the TextView text
 		    	Intent intent = new Intent(SelectDirectionActivity.this, SelectStopActivity.class);
 		    	intent.putExtra("direction", view.toString());
 				SelectDirectionActivity.this.startActivity(intent);

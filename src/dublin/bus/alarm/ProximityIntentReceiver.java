@@ -1,3 +1,8 @@
+/*
+ * Uses proximity intent which creates and displays a notification once the phone is within 
+ * a specified radius of the bus stop
+ */
+
 package dublin.bus.alarm;
 
 import dublin.bus.alarm.R;

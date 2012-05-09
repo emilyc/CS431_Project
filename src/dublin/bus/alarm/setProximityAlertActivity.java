@@ -1,3 +1,8 @@
+/*
+ * Create proximity alert with latitude and longitude from SelectBusStopActivity
+ * and update users location from gps
+ */
+
 package dublin.bus.alarm;
 
 import android.app.PendingIntent;

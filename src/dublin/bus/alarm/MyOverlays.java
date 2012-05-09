@@ -1,3 +1,10 @@
+/*
+ * Creates an overlay for the map populated with markers for each bus stop for the selected route
+ * When a marker is clicked a message will be displayed to the user to confirm their selection
+ * setProximityAlertActivity.java is called with selected point to set location where proximity
+ * alert should be called
+ */
+
 package dublin.bus.alarm;
 
 import java.util.ArrayList;

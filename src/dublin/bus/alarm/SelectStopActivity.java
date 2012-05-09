@@ -1,3 +1,8 @@
+/*
+ * Creates a MapView on screen and uses MyOverlays.java to populate the map with interactive
+ * markers for each bus stop.
+ */
+
 package dublin.bus.alarm;
 
 import android.content.Intent;

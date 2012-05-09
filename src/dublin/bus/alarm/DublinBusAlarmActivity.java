@@ -1,3 +1,8 @@
+/*
+ * Splashscreen - displays image for 5 seconds, then loads next activity
+ * 
+ */
+
 package dublin.bus.alarm;
 
 import java.util.Timer;
@@ -10,7 +15,7 @@ import android.os.Bundle;
 public class DublinBusAlarmActivity extends Activity {
 
 	private long SPLASH_DISPLAY_LENGTH = 5000;
-	// splash screen
+	
 
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
