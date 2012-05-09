@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.widget.Toast;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.ItemizedOverlay;
@@ -59,6 +60,13 @@ public MyOverlays(Context context, Drawable marker) {
 		builder.setNeutralButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Intent intent = new Intent(context, setProximityAlertActivity.class);
+                
+                CharSequence text = "Stop Selected! Wait for a notification";
+                int duration = Toast.LENGTH_LONG;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+                
                 intent.putExtra("latitude", selectedPoint.getLatitudeE6());
                 intent.putExtra("longitude", selectedPoint.getLongitudeE6());
                 context.startActivity(intent);

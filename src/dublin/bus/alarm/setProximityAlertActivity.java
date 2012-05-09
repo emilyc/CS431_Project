@@ -1,6 +1,5 @@
 package dublin.bus.alarm;
 
-import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +11,10 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.google.android.maps.MapActivity;
 
-public class setProximityAlertActivity extends Activity {
+
+public class setProximityAlertActivity extends MapActivity {
     
     private static final long MINIMUM_DISTANCECHANGE_FOR_UPDATE = 1; // in Meters
     private static final long MINIMUM_TIME_BETWEEN_UPDATE = 1000; // in Milliseconds
@@ -97,5 +98,12 @@ public class setProximityAlertActivity extends Activity {
         public void onProviderEnabled(String s) {            
         }
     }
+
+
+	@Override
+	protected boolean isRouteDisplayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
     
 }
